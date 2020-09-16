@@ -1,0 +1,129 @@
+.border {
+  border-bottom: 1px solid #a3a3a3;
+}
+.header {
+  border-bottom: 1px solid #a3a3a3;
+  height: 35px;
+  line-height: 20px;
+  font-size: 20px;
+}
+.header a {
+  color: #2d2727;
+}
+.right {
+  float: left;
+  width: 700px;
+  background-color: #f3f3f3;
+  padding: 30px;
+}
+.about {
+  overflow: hidden;
+}
+.about .help {
+  float: left;
+  width: 270px;
+  height: 320px;
+  padding: 25px 20px;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  margin-right: 30px;
+}
+.about .help h3 {
+  height: 40px;
+  line-height: 35px;
+  color: #2d2727;
+  font-size: 20px;
+  border-bottom: 1px solid #a3a3a3;
+  text-indent: 18px;
+}
+.about .help dl {
+  margin-top: 16px;
+}
+.about .help dl dt {
+  font-size: 16px;
+  text-indent: 18px;
+}
+.about .help dl dt a {
+  color: #433f3c;
+  font-weight: 700;
+}
+.about .help dl dd {
+  text-indent: 35px;
+}
+.about .help dl dd a {
+  font-size: 14px;
+  display: block;
+  color: #464044;
+  margin-top: 12px;
+}
+.about .cooperation {
+  float: left;
+  width: 700px;
+  background-color: #f3f3f3;
+  padding: 30px;
+}
+.about .cooperation h3 {
+  border-bottom: 1px solid #a3a3a3;
+  height: 35px;
+  line-height: 20px;
+  font-size: 20px;
+}
+.about .cooperation h3 a {
+  color: #2d2727;
+}
+.about .cooperation h4 {
+  padding: 30px 0;
+}
+.about .cooperation h4 a {
+  color: #433f3c;
+  font-weight: 700;
+}
+.about .cooperation p {
+  color: #464044;
+  line-height: 30px;
+}
+.about .cooperation .big_event {
+  margin-top: 30px;
+}
+.about .cooperation .contact {
+  margin-top: 30px;
+}
+.about .cooperation h2 {
+  height: 60px;
+  line-height: 60px;
+}
+.about .cooperation dl {
+  text-indent: 25px;
+  color: #464044;
+  line-height: 30px;
+}
+.about .free {
+  float: left;
+  width: 700px;
+  background-color: #f3f3f3;
+  padding: 30px;
+}
+.about .free h3 {
+  border-bottom: 1px solid #a3a3a3;
+  height: 35px;
+  line-height: 20px;
+  font-size: 20px;
+}
+.about .free h3 a {
+  color: #2d2727;
+}
+.about .free dl {
+  margin-bottom: 30px;
+}
+.about .free dl dt {
+  padding: 30px 0;
+  font-size: 16px;
+  color: #433f3c;
+  font-weight: 700;
+}
+.about .free dl dd {
+  line-height: 30px;
+}
+.about .free .last {
+  margin-bottom: 0;
+}

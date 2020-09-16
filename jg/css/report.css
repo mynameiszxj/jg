@@ -1,0 +1,76 @@
+.report h1 {
+  text-align: center;
+  margin: 50px auto;
+}
+.report .cosplay .item_th {
+  margin: 0 auto;
+  width: 350px;
+}
+.report .cosplay .item_th a {
+  text-align: center;
+  display: inline-block;
+  width: 165px;
+  line-height: 50px;
+  color: #a4a3a9;
+  font-size: 20px;
+}
+.report .content {
+  background-color: #f7f7f7;
+}
+.report .content .content_new {
+  padding: 25px;
+}
+.report .content .content_new > ul {
+  width: 1056px;
+  height: 520px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.report .content .content_new > ul:hover {
+  cursor: pointer;
+}
+.report .content .content_new > ul li {
+  position: relative;
+  float: left;
+  width: 220px;
+  height: 228px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.report .content .content_new > ul li .first {
+  width: 100%;
+  height: 130px;
+  border-radius: 10px 10px 0 0;
+}
+.report .content .content_new > ul li p {
+  width: 200px;
+  line-height: 25px;
+  font-size: 12px;
+  color: #39383e;
+  padding-bottom: 30px;
+}
+.report .content .content_new > ul li > div {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+}
+.report .content .content_new > ul li .last {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+.report .content .more:hover {
+  cursor: pointer;
+}
+.report .content .more {
+  text-align: center;
+  color: #ff5547;
+}
+.report .content .more img {
+  padding-right: 5px;
+  vertical-align: middle;
+}

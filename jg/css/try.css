@@ -1,0 +1,165 @@
+.aa {
+  float: left;
+  text-align: center;
+  display: block;
+  width: 165px;
+  line-height: 50px;
+  font-size: 20px;
+}
+.num {
+  color: #c9c9c9;
+}
+.green {
+  color: #5ac44a;
+}
+.red {
+  color: #ff5836;
+}
+.gray {
+  color: #c9c9c9;
+}
+.yellow {
+  color: #bf9b61 !important;
+  background-color: #fdf6cc !important;
+}
+.free .free_th {
+  border-bottom: 1px solid #f2f2f2;
+}
+.free .free_th .header {
+  margin: 0 auto;
+  width: 350px;
+}
+.free .free_th .header a {
+  float: left;
+  text-align: center;
+  display: block;
+  width: 165px;
+  line-height: 50px;
+  font-size: 20px;
+}
+.free .try .try_th {
+  width: 660px;
+  margin: 0 auto;
+}
+.free .try .try_th a {
+  float: left;
+  text-align: center;
+  display: block;
+  width: 165px;
+  line-height: 50px;
+  font-size: 20px;
+}
+.free .all,
+.free .apply,
+.free .trial,
+.free .finish {
+  padding: 25px;
+  background-color: #f7f7f7;
+}
+.free .all > ul,
+.free .apply > ul,
+.free .trial > ul,
+.free .finish > ul {
+  width: 1080px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.free .all > ul:hover,
+.free .apply > ul:hover,
+.free .trial > ul:hover,
+.free .finish > ul:hover {
+  cursor: pointer;
+}
+.free .all > ul li,
+.free .apply > ul li,
+.free .trial > ul li,
+.free .finish > ul li {
+  position: relative;
+  float: left;
+  width: 222px;
+  height: 288px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  margin-right: 35px;
+  margin-bottom: 35px;
+  background-color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.free .all > ul li img,
+.free .apply > ul li img,
+.free .trial > ul li img,
+.free .finish > ul li img {
+  width: 100%;
+  height: 130px;
+  border-radius: 10px 10px 0 0;
+}
+.free .all > ul li h3,
+.free .apply > ul li h3,
+.free .trial > ul li h3,
+.free .finish > ul li h3 {
+  padding: 5px 10px 5px;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 700;
+  color: #282418;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.free .all > ul li > div,
+.free .apply > ul li > div,
+.free .trial > ul li > div,
+.free .finish > ul li > div {
+  width: 125px;
+  height: 25px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+.free .all > ul li > div > span,
+.free .apply > ul li > div > span,
+.free .trial > ul li > div > span,
+.free .finish > ul li > div > span {
+  float: left;
+  display: block;
+  width: 50px;
+  height: 25px;
+  line-height: 22px;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  margin-right: 12px;
+}
+.free .all > ul li p,
+.free .apply > ul li p,
+.free .trial > ul li p,
+.free .finish > ul li p {
+  padding-bottom: 5px;
+}
+.free .all > ul li p > span,
+.free .apply > ul li p > span,
+.free .trial > ul li p > span,
+.free .finish > ul li p > span {
+  color: #ff514c;
+}
+.free .all > ul li a,
+.free .apply > ul li a,
+.free .trial > ul li a,
+.free .finish > ul li a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #ff4740;
+  border-radius: 0 10px 0 10px;
+}
+.free .all #more,
+.free .apply #more,
+.free .trial #more,
+.free .finish #more {
+  text-align: center;
+  color: #ff4942;
+}

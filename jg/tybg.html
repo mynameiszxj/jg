@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/clear.css">
+    <link rel="stylesheet" href="./css/foot.css">
+    <link rel="stylesheet" href="./css/head.css"> -->
+    <link rel="stylesheet" href="./css/tybg.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/address.js"></script>
+</head>
+
+<body>
+    <script src="./js/doT.min.js"></script>
+    <!-- 3. 模板渲染 -->
+    <script id="test1" type="text/x-dot-template">
+    {{~it:value:index}}
+        <li class="two_01">
+            <div class="two_11">
+                <img src="{{=value.img}}">
+                <div class="post">
+                    <p>{{=value.text}}</p>
+                    <p><span>🌙</span><span> 苏苏</span><span>2016-01-25</span>
+                    <span><img src="./img/login/reply.png" alt=""> 3</span>
+                    <span><img src="./img/login/zan.png" alt=""> 3</span></p>
+                </div>
+            </div>
+            <div class="kuang">
+                关于格林威特空气净化器还有 4 篇报告，点击查看
+            </div>
+        </li>
+    {{~}}
+   </script>
+    <script id="test2" type="text/x-dot-template">
+    {{~it:value:index}}
+        <li class="two_01">
+            <div class="two_11">
+                <img src="{{=value.img}}">
+                <div class="post">
+                    <p>{{=value.text}}</p>
+                    <p><span>🌙</span><span> 苏苏</span><span>2016-01-25</span>
+                    <span><img src="./img/login/reply.png" alt=""> 3</span>
+                    <span><img src="./img/login/zan.png" alt=""> 3</span></p>
+                </div>
+            </div>
+        </li>
+    {{~}}
+    </script>
+    <div class="head">
+        <div class="head_w">
+            <img src="./img/logonew.png">
+            <ul class="title_c">
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./play.html">酷玩</a></li>
+                <li><a href="#">导购</a></li>
+                <li><a href="./sy.html">试用</a></li>
+                <li class="bs"><a href="#">报告</a></li>
+            </ul>
+
+            <ul class="title_r">
+                <li><img src="./img/login/search.png"></li>
+                <li><button class="d">登录</button></li>
+                <li><button><a href="./zc.html">注册</a></button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="login">
+        <div class="x">X</div>
+        <div class="inner_left">
+            <div class="login_title">极果账号登录</div>
+            <input type="text" placeholder="手机号">
+            <input type="text" placeholder="密码">
+            <div class="dl">
+                <input type="checkbox">
+                <span>下次自动登录</span>
+                <button>登录</button>
+            </div>
+            <div class="query">
+                <span class="zczh"><a href="./zc.html">注册新账号</a></span>
+                <span>忘记密码</span>
+            </div>
+        </div>
+
+        <div class="inner_right">
+            <div class="right_title">社交网络账号登录</div>
+            <img src="./img/code.png">
+
+        </div>
+    </div>
+
+    <!-- 内容标题 -->
+    <div class="content">
+        <h1>体验报告</h1>
+        <div class="title">
+            <span class="zx">最新</span>
+            <span>最热</span>
+        </div>
+    </div>
+
+    <!-- 内容 -->
+    <div class="content_bg">
+        <div class="content_w clearfix">
+            <!-- 左边 -->
+            <div class="content_left">
+                <!-- 1. 模板渲染的页面 -->
+                <div class="new_max">
+                    <ul class="left_one clearfix" id="list1">
+                    </ul>
+                    <div class="more1" id="more">
+                        <img src="./img/login/more.png">
+                        点击加载更多
+                    </div>
+                </div>
+                <div class="new_hot" hidden>
+                    <ul class="left_one clearfix" id="list2">
+                    </ul>
+                    <div class="more2" id="more">
+                        <img src="./img/login/more.png">
+                        点击加载更多
+                    </div>
+                </div>
+            </div>
+            <!-- 右边 -->
+            <div class="content_right">
+                <div class="right_one">
+                    <div class="line"></div>
+                    <p>购买渠道</p>
+                </div>
+
+                <div class="right_two">
+                    ￥ 499
+                </div>
+
+                <div class="right_three">
+                    <button>点击购买</button>
+                    <div>来自官网</div>
+                </div>
+
+                <div class="right_four">
+                    <div class="line"></div>
+                    <p>极果体验师</p>
+                </div>
+
+                <div class="right_five">
+                    <img src="./img/tiyanImg.jpg">
+                    <p>第一时间体验新品，大众试用优先通过，还有定向邀请试用，新品玩到手软！</p>
+                    <div>要求</div>
+                    <p>是某个领域的大神级玩家，在社交网络或圈子里有大影响力，善写作会拍摄。</p>
+                    <div>申请</div>
+                    <p>1. 关注极果公众号：jguojguo <br />
+                        （或扫描下方二维码）<br />
+                        2. 在公众号内回复：体验师</p>
+                </div>
+
+                <div class="right_six">
+                    <div class="line"></div>
+                    <p>关注我们</p>
+                    <img src="./img/myCode.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="foot">
+            <div class="foot_w">
+                <div class="foot_content">
+                    <img src="./img/code.png">
+                    <div class="content_two">
+                        <img src="./img/logoImg.jpg">
+                        <p>
+                            全球酷玩试用导购千台
+                            酷·新奇·好玩·品质
+                        </p>
+                        <p>
+                            微信添加"JguoJguo"
+                            获取我们的服务
+                        </p>
+                    </div>
+
+                    <div class="content_three">
+                        <ul>
+                            <li class="t">免费试用</li>
+                            <li><a href="#">试用流程</a></li>
+                            <li><a href="#">如何提高成功率</a></li>
+                        </ul>
+
+                        <ul>
+                            <li class="t">友情链接</li>
+                            <li><a href="#">智东西</a> <a href="#">WEIBUSI</a></li>
+                            <li><a href="#">搜狐IT</a> <a href="#">腾讯科技</a></li>
+                            <li><a href="#">搜狐数码</a> <a href="#">凤凰科技</a></li>
+                            <li><a href="#">凤凰数码</a> <a href="#">PConline</a></li>
+                            <li><a href="#">泡泡网</a> <a href="#">3W咖啡</a></li>
+                            <li><a href="#">ZUK社区</a> <a href="#">亿觅emie</a></li>
+                            <li><a href="#">极客公园</a> <a href="#">易迅易起玩</a></li>
+                            <li><a href="#">果库</a></li>
+                        </ul>
+
+                        <ul>
+                            <li class="t">购买攻略</li>
+                            <li><a href="#">美亚海涛教程</a></li>
+                            <li><a href="#">日亚海涛教程</a></li>
+                            <li><a href="#">海淘转运攻略</a></li>
+                            <li><a href="#">kickstarter 众筹购买攻略</a></li>
+                            <li><a href="#">indiegogo 众筹购买攻略</a></li>
+                        </ul>
+
+                        <ul>
+                            <li class="t">厂商合作</li>
+                            <li><a href="./about.html">关于极果</a></li>
+                            <li><a href="./about.html">联系我们</a></li>
+                            <li><a href="#">商务合作：BD@jiguo.com</a></li>
+                            <li><a href="#">CEO邮箱：CEO@jiguo.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="bq">&copy; 2016 极果版权所有</p>
+            </div>
+        </div>
+</body>
+<script src="./js/tybg.js"></script>
+<!-- <script src="./js/head.js"></script> -->
+
+</html>

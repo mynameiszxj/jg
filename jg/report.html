@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/report.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/doT.min.js"></script>
+    <script src="./js/address.js"></script>
+    <script src="./js/report.js"></script>
+</head>
+
+<body>
+    <script id="test" type="text/x-dot-template">
+        {{~it:value:index}}
+            <li>
+                <img src="{{=value.img}}" class="first">
+                <p>{{=value.text}}</p>
+                <div>
+                    <img src="./img/login/xin.png" alt="">
+                    <a href="">{{=value.like}}</a>
+                    <img src="./img/login/reply.png" alt="">
+                    <a href="">{{=value.words}}</a>
+                </div>
+                <img src="./img/login/listbg.jpg" class="last">
+            </li>
+        {{~}} 
+    </script>
+    <div class="report">
+        <h1>导购清单</h1>
+        <div class="cosplay w">
+            <div class="item_th">
+                <a href="" class="b">最新</a>
+                <a href="">最热</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content_new w">
+                <!--  3. 数据展示区域  -->
+                <ul id="list" class="clearfix">
+                    <!-- <li>
+                        <img src="" class="first">
+                        <div>
+                            <p></p>
+                            <img src="../img/login/xin.png" alt="">
+                            <a href=""></a>
+                            <img src="../img/login/reply.png" alt="">
+                            <a href=""></a>
+                        </div>
+                        <img src="../img/login/listbg.jpg" class="last">
+                    </li> -->
+                </ul>
+                <div class="more">
+                    <img src="./img/login/more.png" id="img">
+                    点击加载更多
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

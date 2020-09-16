@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/try.css">
+    <script src="./js/doT.min.js"></script>
+    <script src="./js/address.js"></script>
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 全部模板 -->
+    <script id="test1" type="text/x-dot-template">
+        {{~it:value:index}}
+            <li>
+                <img src="{{=value.img}}">
+                <h3>{{=value.text}}</h3>               
+                {{? value.endTime == "2020-5-25"}}
+                <div class="green">
+                    <span>{{=value.totalnum}}</span>
+                    <span>{{=value.num}}台</span>
+                </div>
+                <p><span>{{=value.apply}}</span>申请</p>
+                <div class="green">查看试用名单</div>
+                {{?? time1(value.endTime) > time2()}}
+                <div class="red">
+                    <span>{{=value.totalnum}}</span>
+                    <span>{{=value.num}}台</span>
+                </div>
+                <p><span>{{=value.apply}}</span>申请</p>
+                <div class="red"> 剩余时间 {{=day(time1(value.endTime), time2())}} 天</div> 
+                {{??}}
+                <div class="gray">
+                    <span>{{=value.totalnum}}</span>
+                    <span>{{=value.num}}台</span>
+                </div>
+                <p><span>{{=value.apply}}</span>申请</p>
+                <div class="gray">报告数量：8</div>
+                {{?}}
+                <a href="">首发</a>
+            </li>
+        {{~}} 
+    </script>
+    <!-- 申请模板 -->
+    <script id="test2" type="text/x-dot-template">
+        {{~it:value:index}}
+            <li>
+                <img src="{{=value.img}}">
+                <h3>{{=value.text}}</h3>               
+                {{? value.endTime == "2020-5-25"}}
+                <div class="red">
+                    <span>{{=value.totalnum}}</span>
+                    <span>{{=value.num}}台</span>
+                </div>
+                <p><span>{{=value.apply}}</span>申请</p>
+                <div class="red">查看试用名单</div>
+                {{?? time1(value.endTime) > time2()}}
+                <div class="red">
+                    <span>{{=value.totalnum}}</span>
+                    <span>{{=value.num}}台</span>
+                </div>
+                <p><span>{{=value.apply}}</span>申请</p>
+                <div class="red"> 剩余时间 {{=day(time1(value.endTime), time2())}} 天</div> 
+                {{??}}
+                <div class="red">
+                    <span>{{=value.totalnum}}</span>
+                    <span>{{=value.num}}台</span>
+                </div>
+                <p><span>{{=value.apply}}</span>申请</p>
+                <div class="red">报告数量：8</div>
+                {{?}}
+                {{? value.info_ty == '首发' }}
+                <a href="">{{= value.info_ty}}</a>
+                {{?}}
+                {{? value.info_ty == '体验师转享' }}
+                <a href="" class="yellow">{{= value.info_ty}}</a>
+                {{?}}
+            </li>
+        {{~}} 
+    </script>
+    <script id="test3" type="text/x-dot-template">
+        {{~it:value:index}}
+        <li>
+            <img src="{{=value.img}}">
+            <h3>{{=value.text}}</h3>               
+            {{? value.endTime == "2020-5-25"}}
+            <div class="green">
+                <span>{{=value.totalnum}}</span>
+                <span>{{=value.num}}台</span>
+            </div>
+            <p><span>{{=value.apply}}</span>申请</p>
+            <div class="green">查看试用名单</div>
+            {{?? time1(value.endTime) > time2()}}
+            <div class="green">
+                <span>{{=value.totalnum}}</span>
+                <span>{{=value.num}}台</span>
+            </div>
+            <p><span>{{=value.apply}}</span>申请</p>
+            <div class="green"> 剩余时间 {{=day(time1(value.endTime), time2())}} 天</div> 
+            {{??}}
+            <div class="green">
+                <span>{{=value.totalnum}}</span>
+                <span>{{=value.num}}台</span>
+            </div>
+            <p><span>{{=value.apply}}</span>申请</p>
+            <div class="green">报告数量：8</div>
+            {{?}}
+            {{? value.info_ty == '首发' }}
+            <a href="">{{= value.info_ty}}</a>
+            {{?}}
+            {{? value.info_ty == '体验师转享' }}
+            <a href="" class="yellow">{{= value.info_ty}}</a>
+            {{?}}
+        </li>
+    {{~}} 
+    </script>
+    <script id="test4" type="text/x-dot-template">
+        {{~it:value:index}}
+        <li>
+            <img src="{{=value.img}}">
+            <h3>{{=value.text}}</h3>               
+            {{? value.endTime == "2020-5-25"}}
+            <div class="gray">
+                <span>{{=value.totalnum}}</span>
+                <span>{{=value.num}}台</span>
+            </div>
+            <p><span>{{=value.apply}}</span>申请</p>
+            <div class="gray">查看试用名单</div>
+            {{?? time1(value.endTime) > time2()}}
+            <div class="gray">
+                <span>{{=value.totalnum}}</span>
+                <span>{{=value.num}}台</span>
+            </div>
+            <p><span>{{=value.apply}}</span>申请</p>
+            <div class="gray"> 剩余时间 {{=day(time1(value.endTime), time2())}} 天</div> 
+            {{??}}
+            <div class="gray">
+                <span>{{=value.totalnum}}</span>
+                <span>{{=value.num}}台</span>
+            </div>
+            <p><span>{{=value.apply}}</span>申请</p>
+            <div class="gray">报告数量：8</div>
+            {{?}}
+            {{? value.info_ty == '首发' }}
+            <a href="">{{= value.info_ty}}</a>
+            {{?}}
+            {{? value.info_ty == '体验师转享' }}
+            <a href="" class="yellow">{{= value.info_ty}}</a>
+            {{?}}
+        </li>
+    {{~}} 
+    </script>
+    <div class="free">
+        <h1>免费试用</h1>
+        <div class="free_th">
+            <div class="header clearfix">
+                <a href="">大众试用</a>
+                <a href="">体验师专享</a>
+            </div>
+        </div>
+        <div class="try w">
+            <div class="try_th clearfix">
+                <a href="">全部</a>
+                <a href="">申请中</a>
+                <a href="">使用中</a>
+                <a href="">已结束</a>
+            </div>
+            <div class="try_th1 clearfix" hidden>
+                <a href="">全部</a>
+                <a href="">申请中</a>
+                <a href="">使用中</a>
+                <a href="">已结束</a>
+            </div>
+        </div>
+        <!-- 大众试用模块 -->
+        <div>
+            <div class="all">
+                <!--  3. 数据展示区域  -->
+                <ul id="list1" class="clearfix">
+                    <!-- <li>
+                        <img src="" alt="">
+                        <h3></h3>
+                        <div>
+                            <span></span>
+                            <span>台</span>
+                        </div>
+                        <p><span></span>申请</p>
+                        <a href="">首发</a>
+                        <div></div>
+                    </li> -->
+                </ul>
+                <div class="more1" id="more">
+                    <img src="./img/login/more.png" id="img">
+                    点击加载更多
+                </div>
+            </div>
+            <div class="apply" hidden>
+                <!--  3. 数据展示区域  -->
+                <ul id="list2" class="clearfix">
+                    <!-- <li>
+                        <img src="" alt="">
+                        <h3></h3>
+                        <div>
+                            <span></span>
+                            <span>台</span>
+                        </div>
+                        <p><span></span>申请</p>
+                        <a href="">首发</a>
+                        <div></div>
+                    </li> -->
+                </ul>
+                <div class="more2" id="more">
+                    <img src="./img/login/more.png" id="img">
+                    点击加载更多
+                </div>
+            </div>
+            <div class="trial" hidden>
+                <!--  3. 数据展示区域  -->
+                <ul id="list3" class="clearfix">
+                    <!-- <li>
+                        <img src="" alt="">
+                        <h3></h3>
+                        <div>
+                            <span></span>
+                            <span>台</span>
+                        </div>
+                        <p><span></span>申请</p>
+                        <a href="">首发</a>
+                        <div></div>
+                    </li> -->
+                </ul>
+                <div class="more3" id="more">
+                    <img src="./img/login/more.png" id="img">
+                    点击加载更多
+                </div>
+            </div>
+            <div class="finish" hidden>
+                <!--  3. 数据展示区域  -->
+                <ul id="list4" class="clearfix">
+                    <!-- <li>
+                        <img src="" alt="">
+                        <h3></h3>
+                        <div>
+                            <span></span>
+                            <span>台</span>
+                        </div>
+                        <p><span></span>申请</p>
+                        <a href="">首发</a>
+                        <div></div>
+                    </li> -->
+                </ul>
+                <div class="more4" id="more">
+                    <img src="./img/login/more.png" id="img">
+                    点击加载更多
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/try.js"></script>
+</body>
+
+</html>
